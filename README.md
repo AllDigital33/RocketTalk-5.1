@@ -58,7 +58,9 @@ This is a passion project to create bi-directional telemetry, long-range trackin
 * **Downlink Antenna:**  The choice of downlink antennas on the vehicle is almost more important than the radio. We’ve tried dozens of antennas. The best antenna for us is a simple homemade dipole antenna running vertical in the airframe. We’ve tried whip, inverted V, fractal, and more, but the dipole performs the best. We used to make them by hand, but now we print our diploe antennas onto a long thin custom PCBs and trim to tune them (about $2/each)
 * **5V Regulator:**  We use two L4941BDT-TR 5v 1A regulators to power the Teensy and the Radio. We run a separate regulator for the radio to minimize RFI and RF blowback, as well, provide the radio with a full one amp of power. All of the pyro events are triggered directly off of the Lipo battery and do not go through the regulators. 
 * **Pyro Drivers:** We are using Rohm BV1HD090FJ-CE2 automotive switching drivers for all of our pyro events. These are rated at 5.5A and provide over-current protection and they have a convenient status pin that provides continuity check back to the MCU. There are other drivers that can switch up to 10A, but these have served us well for hundreds of pyro events using commercial MJG e-matches.
-* **Terminals:**  We use JST board connectors for the low voltage connections and screw terminals for the hazard connections (power, switch, pyros). 
+* **Terminals:**  We use JST board connectors for the low voltage connections and screw terminals for the hazard connections (power, switch, pyros).
+* **RFI Shielding:**  A powerful one watt downlink transmitter comes with benefits and issues. On the positive, it can drive a data signal loud and far, but on the negative side it also showers all the sensors, the I2C lines, and the MCU with lots of disruptive radio frequency interference. In earlier versions we had sensor issues, code execution glitches, and full core dumps due to RFI. So, the current v5.1 board incorporates extensive shielding measures to protect the sensors and the MCU including full RF shield, ferrites, PCB ground planes, and more.
+
 
 
 # Vehicle Board Code Overview
