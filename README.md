@@ -4,8 +4,6 @@ This is a full-featured rocket flight computer for amateur and experimental rock
 
 Please read the Overview.PDF file attached for a detailed overview of the hardware and software solution.
 
-There is also a quick video overview here:  https://vimeo.com/489179754/c7f04c6ab9
-
 The code in the repository is split between the vehicle code (Arduino / Teensy) and the base station code (iPad / iOS Swift). 
 
 # Disclaimer
