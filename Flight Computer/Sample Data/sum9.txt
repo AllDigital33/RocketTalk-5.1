@@ -1,0 +1,2 @@
+launch number, launch time, apogee time, landed time, aft event time, fore event time, ascent seconds, descent seconds, burnout seconds, AGL Baro, AGL GPS, AGL Accel, Launch Accel Max, Max temp, Max tilt, Batt voltage, Speed baro fps, mps, mph, SpeedA mps, Descent rate fps, landed rate fps, Landed GPS coord
+05/20/2023-14:17:21.459,9,14:14:06,14:14:31,14:17:21,none,none,24,170,5.6,8172,8716,n/a,6995,118,19,73,724,221,493,n/a,-48,-15,35.355724,-117.805130
