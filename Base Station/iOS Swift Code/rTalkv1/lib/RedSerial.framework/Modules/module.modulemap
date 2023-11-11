@@ -1,0 +1,6 @@
+framework module RedSerial {
+  umbrella header "RedSerial.h"
+
+  export *
+  module * { export * }
+}
